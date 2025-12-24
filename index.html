@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,9 +70,11 @@
 
                 <div class="flex items-center gap-2">
                     <div class="flex bg-slate-800 rounded-lg p-1">
-                        <button onclick="switchLanguage('en')" class="lang-btn text-[10px] font-bold px-2 py-1 rounded bg-omniaTeal text-omniaDark" id="btn-en">EN</button>
-                        <button onclick="switchLanguage('fr')" class="lang-btn text-[10px] font-bold px-2 py-1 rounded text-gray-400 hover:text-white" id="btn-fr">FR</button>
+                        <button onclick="switchLanguage('en')" class="lang-btn text-[10px] font-bold px-2 py-1 rounded text-gray-400 hover:text-white" id="btn-en">EN</button>
+                        <button onclick="switchLanguage('fr')" class="lang-btn text-[10px] font-bold px-2 py-1 rounded bg-omniaTeal text-omniaDark" id="btn-fr">FR</button>
                         <button onclick="switchLanguage('it')" class="lang-btn text-[10px] font-bold px-2 py-1 rounded text-gray-400 hover:text-white" id="btn-it">IT</button>
+                        <button onclick="switchLanguage('el')" class="lang-btn text-[10px] font-bold px-2 py-1 rounded text-gray-400 hover:text-white" id="btn-el">EL</button>
+                        <button onclick="switchLanguage('sq')" class="lang-btn text-[10px] font-bold px-2 py-1 rounded text-gray-400 hover:text-white" id="btn-sq">SQ</button>
                     </div>
                 </div>
             </div>
@@ -115,9 +117,7 @@
                 <div class="bg-slate-50 border-l-4 border-omniaTeal p-8 rounded-r-xl mb-16 max-w-5xl mx-auto shadow-sm">
                     <h3 class="text-xl font-bold text-omniaDark mb-3" data-i18n="abstract_title">Project Overview</h3>
                     <p class="text-gray-700 leading-relaxed text-justify" data-i18n="abstract_text">
-                        OmniaGene is more than a laboratory; it is a pact with the territory. Located in the heart of Salento, we apply the One Health principle: acknowledging that the health of humans, animals, and the environment is inextricably linked. 
-                        <br><br>
-                        Currently, Apulia suffers from a lack of advanced diagnostic infrastructure, forcing biological samples to travel North for analysis. We reverse this trend by collaborating directly with local hospitals, municipalities, and veterinarians. Our goal is to empower local professionals with world-class genomic intelligence, keeping expertise and value within the region.
+                        OmniaGene is more than a laboratory; it is a pact with the territory. Located in the heart of Salento, we apply the One Health principle. Currently, Apulia suffers from a lack of advanced diagnostic infrastructure. We reverse this trend by collaborating directly with local hospitals and veterinarians.
                     </p>
                 </div>
 
@@ -130,7 +130,7 @@
                         <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-500 mb-6">
                             <h4 class="font-bold text-red-700 mb-2" data-i18n="impact_title">Impact on Cancer Care</h4>
                             <p class="text-sm text-red-800/80" data-i18n="impact_text">
-                                Delays of <strong>4 weeks to 6 months</strong> reduce the chances of remission. Early detection is the #1 factor in cancer survival rates.
+                                Delays of 4 weeks to 6 months reduce the chances of remission. Early detection is the #1 factor in cancer survival rates.
                             </p>
                         </div>
                     </div>
@@ -141,20 +141,19 @@
                             <div class="text-5xl font-extrabold text-omniaDark mr-4">72 <span class="text-xl font-normal text-gray-500" data-i18n="hours">hours</span></div>
                             <div class="text-gray-600" data-i18n="speed_text">From sample pickup to LIMS report. Speed saves lives.</div>
                         </div>
-                        
                         <div class="space-y-4">
                              <div class="flex items-start">
                                 <div class="bg-white p-2 rounded shadow text-omniaTeal mr-3"><i class="fa-solid fa-truck-medical"></i></div>
                                 <div>
                                     <strong class="block text-gray-900" data-i18n="logistics_title">End-to-End Logistics</strong>
-                                    <span class="text-sm text-gray-500" data-i18n="logistics_text">We pick up samples directly from the client and upload results securely to your LIMS.</span>
+                                    <span class="text-sm text-gray-500" data-i18n="logistics_text">We pick up samples directly from the client.</span>
                                 </div>
                             </div>
                             <div class="flex items-start">
                                 <div class="bg-white p-2 rounded shadow text-blue-600 mr-3"><i class="fa-solid fa-user-doctor"></i></div>
                                 <div>
                                     <strong class="block text-gray-900" data-i18n="doctors_title">Empowering Doctors</strong>
-                                    <span class="text-sm text-gray-500" data-i18n="doctors_text">Our AI-annotated reports save physicians hours of research, allowing them to focus 100% on patient care.</span>
+                                    <span class="text-sm text-gray-500" data-i18n="doctors_text">AI-annotated reports save physicians hours of research.</span>
                                 </div>
                             </div>
                         </div>
@@ -177,25 +176,21 @@
                             <div class="bg-omniaTeal text-omniaDark font-bold px-3 py-1 rounded shadow text-sm mr-3">WET LAB</div>
                             <h3 class="text-xl font-bold text-white" data-i18n="wet_lab_title">Biological Analysis</h3>
                         </div>
-                        
                         <div class="space-y-8 relative pl-8 border-l border-slate-600">
                             <div class="relative">
                                 <div class="absolute -left-[41px] bg-slate-700 w-8 h-8 rounded-full flex items-center justify-center border border-omniaTeal font-bold text-xs text-omniaTeal">1</div>
                                 <h4 class="text-lg font-bold text-white" data-i18n="step1_title">Sample Intake & LIMS</h4>
-                                <p class="text-sm text-gray-400" data-i18n="step1_text">Samples arrive. Barcodes are scanned. Metadata is instantly entered into the LIMS (Laboratory Information Management System).</p>
+                                <p class="text-sm text-gray-400" data-i18n="step1_text">Barcodes are scanned. Metadata is instantly entered into the LIMS.</p>
                             </div>
                              <div class="relative">
                                 <div class="absolute -left-[41px] bg-slate-700 w-8 h-8 rounded-full flex items-center justify-center border border-omniaTeal font-bold text-xs text-omniaTeal">2</div>
                                 <h4 class="text-lg font-bold text-white" data-i18n="step2_title">High-Purity Extraction</h4>
-                                <p class="text-sm text-gray-400" data-i18n="step2_text">Standardized RNA/DNA extraction using high-grade protocols to ensure maximum quality for the assay.</p>
+                                <p class="text-sm text-gray-400" data-i18n="step2_text">Standardized RNA/DNA extraction using high-grade protocols.</p>
                             </div>
                              <div class="relative">
                                 <div class="absolute -left-[41px] bg-slate-700 w-8 h-8 rounded-full flex items-center justify-center border border-omniaTeal font-bold text-xs text-omniaTeal">3</div>
                                 <h4 class="text-lg font-bold text-white" data-i18n="step3_title">qPCR Analysis</h4>
-                                <p class="text-sm text-gray-400" data-i18n="step3_text">
-                                    The core engine. Multi-target qPCR machines detect specific genes/pathogens in hours. <br>
-                                    <em class="text-xs text-gray-500">*NGS is used on-demand for deep sequencing.</em>
-                                </p>
+                                <p class="text-sm text-gray-400" data-i18n="step3_text">The core engine. Multi-target qPCR machines detect specific genes/pathogens.</p>
                             </div>
                         </div>
                     </div>
@@ -205,21 +200,16 @@
                             <div class="bg-blue-600 text-white font-bold px-3 py-1 rounded shadow text-sm mr-3">DIGITAL LAB</div>
                             <h3 class="text-xl font-bold text-white" data-i18n="dry_lab_title">H24 Automated Workflow</h3>
                         </div>
-
                         <div class="space-y-8 relative pl-8 border-l border-blue-800">
                             <div class="relative">
                                 <div class="absolute -left-[41px] bg-blue-900 w-8 h-8 rounded-full flex items-center justify-center border border-blue-500 font-bold text-xs text-blue-400">4</div>
                                 <h4 class="text-lg font-bold text-white" data-i18n="step4_title">Parallel Processing</h4>
-                                <p class="text-sm text-gray-400" data-i18n="step4_text">
-                                    Data from qPCR/LIMS triggers the workflow API. <br>
-                                    <span class="text-blue-400">Stream A:</span> Secure Storage (GDPR).<br>
-                                    <span class="text-omniaTeal">Stream B:</span> <strong>Mistral Large 3</strong> (Fine-tuned) analyzes the results instantly.
-                                </p>
+                                <p class="text-sm text-gray-400" data-i18n="step4_text">Data sent to Storage (GDPR) and to AI Stream.</p>
                             </div>
                              <div class="relative">
                                 <div class="absolute -left-[41px] bg-blue-900 w-8 h-8 rounded-full flex items-center justify-center border border-blue-500 font-bold text-xs text-blue-400">5</div>
                                 <h4 class="text-lg font-bold text-white" data-i18n="step5_title">Mistral Large 3 + Fine-Tuning</h4>
-                                <p class="text-sm text-gray-400" data-i18n="step5_text">Our custom-trained <strong>Mistral Large 3</strong> model analyzes the data. It is fine-tuned on specific regional pathogen datasets.</p>
+                                <p class="text-sm text-gray-400" data-i18n="step5_text">Our custom-trained model analyzes the results instantly.</p>
                             </div>
                              <div class="relative">
                                 <div class="absolute -left-[41px] bg-blue-900 w-8 h-8 rounded-full flex items-center justify-center border border-blue-500 font-bold text-xs text-blue-400">6</div>
@@ -233,12 +223,11 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
 
                 <div class="flex flex-col items-center justify-center mt-12 border-t border-slate-700 pt-8">
                     <p class="text-gray-400 mb-6 text-center max-w-2xl text-sm" data-i18n="rag_desc">
-                        Transparency is key. Click below to see the extensive list of open-data sources our AI consults via RAG.
+                        Transparency is key. Click below to see the extensive list of open-data sources our AI consults.
                     </p>
                     <button onclick="toggleModal('ragModal')" class="flex items-center px-6 py-3 border border-omniaTeal text-omniaTeal rounded-full hover:bg-omniaTeal hover:text-omniaDark transition font-semibold">
                         <i class="fa-solid fa-database mr-2"></i> <span data-i18n="rag_btn">View Verified Data Sources</span>
@@ -253,107 +242,25 @@
                     <h2 class="text-4xl font-extrabold text-omniaDark" data-i18n="sectors_title">One Health Sectors</h2>
                     <p class="text-gray-600 mt-2" data-i18n="sectors_sub">Comprehensive diagnostics for every living system.</p>
                 </div>
-
-                <div class="space-y-8">
-                    <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col md:flex-row border-l-8 border-blue-600">
-                        <div class="p-6 md:w-3/4">
-                            <h3 class="text-2xl font-bold text-omniaBlue mb-2" data-i18n="sec_human">Human Health</h3>
-                            <p class="text-gray-600 mb-4 font-semibold" data-i18n="sec_human_desc">Providing hospitals and individuals with molecular insights that save lives.</p>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-700">
-                                <div><i class="fa-solid fa-check text-blue-500 mr-2"></i> Oncology (Liquid Biopsy)</div>
-                                <div><i class="fa-solid fa-check text-blue-500 mr-2"></i> Infectious Diseases</div>
-                                <div><i class="fa-solid fa-check text-blue-500 mr-2"></i> Paternity & Parentality</div>
-                                <div><i class="fa-solid fa-check text-blue-500 mr-2"></i> Sexual Health (STDs)</div>
-                            </div>
-                        </div>
-                        <div class="bg-blue-50 md:w-1/4 flex items-center justify-center p-4">
-                            <i class="fa-solid fa-dna text-6xl text-blue-200"></i>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col md:flex-row border-l-8 border-blue-600 mb-8">
+                    <div class="p-6 md:w-3/4">
+                        <h3 class="text-2xl font-bold text-omniaBlue mb-2" data-i18n="sec_human">Human Health</h3>
+                        <p class="text-gray-600 mb-4 font-semibold" data-i18n="sec_human_desc">Providing hospitals with molecular insights that save lives.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-700">
+                            <div><i class="fa-solid fa-check text-blue-500 mr-2"></i> Oncology (Liquid Biopsy)</div>
+                            <div><i class="fa-solid fa-check text-blue-500 mr-2"></i> Infectious Diseases</div>
+                            <div><i class="fa-solid fa-check text-blue-500 mr-2"></i> Paternity & Parentality</div>
+                            <div><i class="fa-solid fa-check text-blue-500 mr-2"></i> Sexual Health (STDs)</div>
                         </div>
                     </div>
-
-                    <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col md:flex-row border-l-8 border-green-600">
-                        <div class="p-6 md:w-3/4">
-                            <h3 class="text-2xl font-bold text-green-700 mb-2" data-i18n="sec_vet">Veterinary & Livestock</h3>
-                            <p class="text-gray-600 mb-4 font-semibold" data-i18n="sec_vet_desc">Protecting agricultural heritage and companion animals.</p>
-                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-700">
-                                <div><i class="fa-solid fa-check text-green-500 mr-2"></i> Livestock Epidemics</div>
-                                <div><i class="fa-solid fa-check text-green-500 mr-2"></i> Pedigree Certification</div>
-                                <div><i class="fa-solid fa-check text-green-500 mr-2"></i> Pet Diagnostics</div>
-                                <div><i class="fa-solid fa-check text-green-500 mr-2"></i> Breeding Optimization</div>
-                            </div>
-                        </div>
-                        <div class="bg-green-50 md:w-1/4 flex items-center justify-center p-4">
-                            <i class="fa-solid fa-cow text-6xl text-green-200"></i>
-                        </div>
-                    </div>
-
-                    <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col md:flex-row border-l-8 border-yellow-500">
-                        <div class="p-6 md:w-3/4">
-                            <h3 class="text-2xl font-bold text-yellow-600 mb-2" data-i18n="sec_food">Agri-Food Safety</h3>
-                            <p class="text-gray-600 mb-4 font-semibold" data-i18n="sec_food_desc">Authenticating "Made in Italy" products and ensuring safety.</p>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-700">
-                                <div><i class="fa-solid fa-check text-yellow-500 mr-2"></i> Pathogen Detection</div>
-                                <div><i class="fa-solid fa-check text-yellow-500 mr-2"></i> GMO Testing</div>
-                                <div><i class="fa-solid fa-check text-yellow-500 mr-2"></i> Authenticity (DNA)</div>
-                                <div><i class="fa-solid fa-check text-yellow-500 mr-2"></i> Allergen Tracing</div>
-                            </div>
-                        </div>
-                        <div class="bg-yellow-50 md:w-1/4 flex items-center justify-center p-4">
-                            <i class="fa-solid fa-utensils text-6xl text-yellow-200"></i>
-                        </div>
-                    </div>
-
-                    <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col md:flex-row border-l-8 border-cyan-500">
-                        <div class="p-6 md:w-3/4">
-                            <h3 class="text-2xl font-bold text-cyan-600 mb-2" data-i18n="sec_env">Environment</h3>
-                            <p class="text-gray-600 mb-4 font-semibold" data-i18n="sec_env_desc">Monitoring the ecosystem to detect invisible threats.</p>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-700">
-                                <div><i class="fa-solid fa-check text-cyan-500 mr-2"></i> Water Analysis (eDNA)</div>
-                                <div><i class="fa-solid fa-check text-cyan-500 mr-2"></i> Soil Health</div>
-                                <div><i class="fa-solid fa-check text-cyan-500 mr-2"></i> Air Quality (Pathogens)</div>
-                                <div><i class="fa-solid fa-check text-cyan-500 mr-2"></i> Invasive Species</div>
-                            </div>
-                        </div>
-                        <div class="bg-cyan-50 md:w-1/4 flex items-center justify-center p-4">
-                            <i class="fa-solid fa-water text-6xl text-cyan-200"></i>
-                        </div>
-                    </div>
+                    <div class="bg-blue-50 md:w-1/4 flex items-center justify-center p-4"><i class="fa-solid fa-dna text-6xl text-blue-200"></i></div>
                 </div>
-            </div>
-        </section>
-
-        <section id="quality" class="page-section bg-white py-12">
-            <div class="max-w-7xl mx-auto px-4 text-center">
-                <h2 class="text-4xl font-extrabold text-omniaDark mb-8" data-i18n="quality_title">Quality & Accreditation</h2>
-                <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto" data-i18n="quality_sub">
-                    Trust is our currency. OmniaGene is built to meet the strictest Regional and European standards, ensuring that every result is legally valid and clinically actionable.
-                </p>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="border border-gray-200 p-6 rounded-xl hover:shadow-lg transition text-left border-t-4 border-omniaBlue">
-                        <div class="flex items-center mb-4"><i class="fa-solid fa-certificate text-3xl text-omniaBlue mr-3"></i><h3 class="font-bold text-lg">ISO 15189</h3></div>
-                        <p class="text-sm text-gray-600" data-i18n="iso15189_text">The gold standard for medical laboratories. It certifies our competence in medical testing.</p>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col md:flex-row border-l-8 border-green-600 mb-8">
+                    <div class="p-6 md:w-3/4">
+                        <h3 class="text-2xl font-bold text-green-700 mb-2" data-i18n="sec_vet">Veterinary</h3>
+                        <p class="text-gray-600 mb-4 font-semibold" data-i18n="sec_vet_desc">Protecting agricultural heritage and companion animals.</p>
                     </div>
-                     <div class="border border-gray-200 p-6 rounded-xl hover:shadow-lg transition text-left border-t-4 border-omniaBlue">
-                        <div class="flex items-center mb-4"><i class="fa-solid fa-flask text-3xl text-omniaBlue mr-3"></i><h3 class="font-bold text-lg">ISO 17025</h3></div>
-                        <p class="text-sm text-gray-600" data-i18n="iso17025_text">General requirements for the competence of testing and calibration laboratories.</p>
-                    </div>
-                    <div class="border border-gray-200 p-6 rounded-xl hover:shadow-lg transition text-left border-t-4 border-red-600">
-                        <div class="flex items-center mb-4"><i class="fa-solid fa-building-columns text-3xl text-red-600 mr-3"></i><h3 class="font-bold text-lg">Regione Puglia</h3></div>
-                        <p class="text-sm text-gray-600" data-i18n="region_text">Regional Accreditation for operating in the public health sector.</p>
-                    </div>
-                    <div class="border border-gray-200 p-6 rounded-xl hover:shadow-lg transition text-left border-t-4 border-omniaTeal">
-                        <div class="flex items-center mb-4"><i class="fa-solid fa-robot text-3xl text-omniaTeal mr-3"></i><h3 class="font-bold text-lg">EU AI Act</h3></div>
-                        <p class="text-sm text-gray-600" data-i18n="aiact_text">Full compliance with the new European regulation on AI for High-Risk Medical Devices.</p>
-                    </div>
-                     <div class="border border-gray-200 p-6 rounded-xl hover:shadow-lg transition text-left border-t-4 border-omniaTeal">
-                        <div class="flex items-center mb-4"><i class="fa-solid fa-lock text-3xl text-omniaTeal mr-3"></i><h3 class="font-bold text-lg">GDPR / ISO 27001</h3></div>
-                        <p class="text-sm text-gray-600" data-i18n="gdpr_text">Strict Information security management. Total Data sovereignty with EU-based servers.</p>
-                    </div>
-                    <div class="border border-gray-200 p-6 rounded-xl hover:shadow-lg transition text-left border-t-4 border-gray-600">
-                        <div class="flex items-center mb-4"><i class="fa-solid fa-check-double text-3xl text-gray-600 mr-3"></i><h3 class="font-bold text-lg">ISO 9001</h3></div>
-                        <p class="text-sm text-gray-600" data-i18n="iso9001_text">Quality management systems ensuring consistent improvement.</p>
-                    </div>
+                    <div class="bg-green-50 md:w-1/4 flex items-center justify-center p-4"><i class="fa-solid fa-cow text-6xl text-green-200"></i></div>
                 </div>
             </div>
         </section>
@@ -362,7 +269,6 @@
             <div class="max-w-7xl mx-auto px-4">
                 <div class="text-center mb-16">
                     <h2 class="text-4xl font-extrabold text-omniaDark" data-i18n="team_header">Founders & Leadership</h2>
-                    <p class="text-gray-600 mt-2" data-i18n="team_sub">The synergy between deep biology and automation strategy.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
@@ -370,39 +276,17 @@
                         <div class="w-32 h-32 bg-slate-100 rounded-full mb-6 flex items-center justify-center overflow-hidden border-2 border-slate-200"><i class="fa-solid fa-user-doctor text-5xl text-gray-300"></i></div>
                         <h3 class="text-2xl font-bold text-omniaDark">Dr. Jacopo Amerigo Carpentieri, PhD</h3>
                         <span class="bg-omniaTeal/10 text-omniaTeal font-bold px-4 py-1 rounded-full text-sm mt-2 mb-4" data-i18n="role_jacopo">Co-Founder & CEO</span>
-                        <p class="text-omniaDark font-semibold text-sm italic mb-4" data-i18n="tag_jacopo">"The Scientific Visionary."</p>
-                        
                         <div class="bg-slate-50 p-4 rounded-lg mb-4 text-sm text-gray-700 italic border border-slate-100" data-i18n="human_jacopo">
-                            "Native of Lecce, Jacopo grew up witnessing the healthcare gaps in his homeland. A humanitarian at heart, he returned with a mission: to use science as a tool for justice."
+                            "Native of Lecce, Jacopo grew up witnessing the healthcare gaps in his homeland. A humanitarian at heart, he returned with a mission."
                         </div>
-
-                        <p class="text-gray-600 text-sm leading-relaxed mb-4" data-i18n="bio_jacopo">
-                             He transformed a clinical gap into a scalable scientific solution. He drives the scientific validation and clinical implementation of the lab.
-                        </p>
-                        <p class="text-gray-500 text-xs text-left w-full border-t pt-4">
-                            <i class="fa-solid fa-graduation-cap mr-2"></i><strong>PhD from Institut Curie (Paris):</strong> Molecular genetics.<br>
-                            <i class="fa-solid fa-certificate mr-2"></i><strong>Certified Lab Director:</strong> Qualification for directing medical laboratories.<br>
-                            <i class="fa-solid fa-briefcase mr-2"></i><strong>Expertise:</strong> Design of qPCR assays, Clinical Project Management (CERC).
-                        </p>
                     </div>
-
                     <div class="bg-white p-8 rounded-2xl shadow-lg flex flex-col items-center text-center border-t-4 border-blue-600">
-                         <div class="w-32 h-32 bg-slate-100 rounded-full mb-6 flex items-center justify-center overflow-hidden border-2 border-slate-200"><i class="fa-solid fa-user-tie text-5xl text-gray-300"></i></div>
+                        <div class="w-32 h-32 bg-slate-100 rounded-full mb-6 flex items-center justify-center overflow-hidden border-2 border-slate-200"><i class="fa-solid fa-user-tie text-5xl text-gray-300"></i></div>
                         <h3 class="text-2xl font-bold text-omniaDark">Ronald Padovan</h3>
                         <span class="bg-blue-100 text-blue-700 font-bold px-4 py-1 rounded-full text-sm mt-2 mb-4" data-i18n="role_ronald">Co-Founder & CSAO</span>
-                        <p class="text-omniaDark font-semibold text-sm italic mb-4" data-i18n="tag_ronald">"The Architect & Tech Enthusiast."</p>
-                        
                         <div class="bg-slate-50 p-4 rounded-lg mb-4 text-sm text-gray-700 italic border border-slate-100" data-i18n="human_ronald">
-                            "A young Frenchman who discovered Apulia through Jacopo. A true pizza lover, he wants to see the region prosper. He brings the 'geek' vision and extreme versatility."
+                            "A young Frenchman who discovered Apulia through Jacopo. A true pizza lover, he wants to see the region prosper. He brings the 'geek' vision."
                         </div>
-
-                        <p class="text-gray-600 text-sm leading-relaxed mb-4" data-i18n="bio_ronald">
-                            The architect behind OmniaGene's business strategy and digital process automation. He turns complex workflows into efficient systems.
-                        </p>
-                        <p class="text-gray-500 text-xs text-left w-full border-t pt-4">
-                            <i class="fa-solid fa-graduation-cap mr-2"></i><strong>Master from IAE Caen & Exec. Certif. HEC Paris:</strong> Strategy & Digital Transformation.<br>
-                            <i class="fa-solid fa-briefcase mr-2"></i><strong>Expertise:</strong> Business Strategy, Scaling organizations, Workflow Automation (n8n).
-                        </p>
                     </div>
                 </div>
             </div>
@@ -410,48 +294,16 @@
 
     </main>
 
-    <footer class="bg-omniaDark text-white py-12 mt-auto">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <span class="text-2xl font-bold tracking-tight">Omnia<span class="text-omniaTeal">Gene</span></span>
-            <p class="mt-4 text-gray-400 text-sm">Lecce, Italy. Innovating for a healthier future.</p>
-            <div class="mt-8 text-xs text-gray-600 border-t border-slate-800 pt-4">
-                © 2025 OmniaGene. All rights reserved.
-            </div>
-        </div>
-    </footer>
-
     <div id="ragModal" class="hidden fixed inset-0 z-[60] flex items-center justify-center p-4 bg-slate-900/80 backdrop-blur-sm">
-        <div class="bg-white rounded-xl shadow-2xl max-w-2xl w-full flex flex-col max-h-[90vh]">
-            <div class="bg-omniaDark p-4 flex justify-between items-center flex-shrink-0 rounded-t-xl">
-                <h3 class="text-white font-bold"><i class="fa-solid fa-database text-omniaTeal mr-2"></i> Verified Data Sources</h3>
-                <button onclick="toggleModal('ragModal')" class="text-gray-400 hover:text-white"><i class="fa-solid fa-times"></i></button>
+        <div class="bg-white rounded-xl shadow-2xl max-w-2xl w-full p-6">
+            <h3 class="font-bold text-xl mb-4">Verified Data Sources</h3>
+            <div class="grid grid-cols-2 gap-2 text-sm">
+                <div><i class="fa-solid fa-check text-green-500"></i> PubMed & ClinVar</div>
+                <div><i class="fa-solid fa-check text-green-500"></i> AIFA & ISS (Italy)</div>
+                <div><i class="fa-solid fa-check text-green-500"></i> EMA & EFSA (Europe)</div>
+                <div><i class="fa-solid fa-check text-green-500"></i> WHO / OMS</div>
             </div>
-            <div class="p-6 overflow-y-auto">
-                <p class="text-sm text-gray-600 mb-4">
-                    Our AI models do not "think" in a vacuum. They retrieve information strictly from these authorized open-data repositories:
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3 text-sm">
-                    <div class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i> ClinVar (NIH)</div>
-                    <div class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i> CIVIC (Clinical Interpretations)</div>
-                    <div class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i> MyVariant.info</div>
-                    <div class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i> COSMIC (Cancer Mutation)</div>
-                    <div class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i> TCGA (Cancer Genome Atlas)</div>
-                    <div class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i> GHO (Global Health Observatory)</div>
-                    <div class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i> OMS / WHO Data</div>
-                    <div class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i> openFDA</div>
-                    <div class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i> ECDC (Disease Control EU)</div>
-                    <div class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i> PAHO Open Data</div>
-                    <div class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i> WAHIS (Animal Health)</div>
-                    <div class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i> EEA Datahub (Environment)</div>
-                    <div class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i> NOAA Climate Data</div>
-                    <div class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i> GBIF (Biodiversity)</div>
-                    <div class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i> Data.europe.eu</div>
-                    <div class="flex items-center"><i class="fa-solid fa-check text-green-500 mr-2"></i> World Bank Open Data</div>
-                </div>
-            </div>
-            <div class="p-4 border-t border-gray-100 flex-shrink-0">
-                <button onclick="toggleModal('ragModal')" class="w-full bg-slate-100 py-2 rounded-lg hover:bg-slate-200 text-sm font-bold text-slate-700">Close</button>
-            </div>
+            <button onclick="toggleModal('ragModal')" class="mt-6 w-full bg-slate-100 py-2 rounded font-bold">Close</button>
         </div>
     </div>
 
@@ -461,11 +313,7 @@
             document.getElementById(pageId).classList.add('active');
             window.scrollTo(0, 0);
         }
-        function toggleModal(id) { 
-            const el = document.getElementById(id);
-            el.classList.toggle('hidden');
-            document.body.classList.toggle('modal-open');
-        }
+        function toggleModal(id) { document.getElementById(id).classList.toggle('hidden'); document.body.classList.toggle('modal-open'); }
 
         const translations = {
             en: {
@@ -474,41 +322,29 @@
                 hero_subtitle: "Deep-Tech diagnostics powered by AI & qPCR. Bringing precision medicine to Lecce in 72 hours.",
                 cta_mission: "Our Mission", cta_tech: "Our Technology",
                 mission_title: "Bridging the Gap", mission_sub: "We stop the 'Sample Migration' to ensure local health security.",
-                abstract_title: "Project Overview", abstract_text: "OmniaGene is more than a laboratory; it is a pact with the territory. Located in the heart of Salento, we apply the One Health principle: acknowledging that the health of humans, animals, and the environment is inextricably linked. Currently, Apulia suffers from a lack of advanced diagnostic infrastructure, forcing biological samples to travel North for analysis. We reverse this trend by collaborating directly with local hospitals, municipalities, and veterinarians. Our goal is to empower local professionals with world-class genomic intelligence, keeping expertise and value within the region.",
-                reality_title: "The Reality", impact_title: "Impact on Cancer Care", impact_text: "Delays of 4 weeks to 6 months reduce the chances of remission. Early detection is the #1 factor in cancer survival rates.",
+                abstract_title: "Project Overview", abstract_text: "OmniaGene is more than a laboratory; it is a pact with the territory. Located in the heart of Salento, we apply the One Health principle.",
+                reality_title: "The Reality", impact_title: "Impact on Cancer Care", impact_text: "Delays of 4 weeks to 6 months reduce the chances of remission.",
                 promise_title: "The OmniaGene Promise", speed_text: "From sample pickup to LIMS report. Speed saves lives.",
-                logistics_title: "End-to-End Logistics", logistics_text: "We pick up samples directly from the client and upload results securely to your LIMS.",
-                doctors_title: "Empowering Doctors", doctors_text: "Our AI-annotated reports save physicians hours of research, allowing them to focus 100% on patient care.",
+                logistics_title: "End-to-End Logistics", logistics_text: "We pick up samples directly from the client.",
+                doctors_title: "Empowering Doctors", doctors_text: "AI-annotated reports save physicians hours of research.",
                 tech_title: "Advanced Workflow", tech_sub: "Wet Lab Science & Automated Intelligence running 24/7.",
                 wet_lab_title: "Biological Analysis", dry_lab_title: "H24 Automated Workflow",
-                step1_title: "Sample Intake & LIMS", step1_text: "Samples arrive. Barcodes are scanned. Metadata is instantly entered into the LIMS (Laboratory Information Management System).",
-                step2_title: "High-Purity Extraction", step2_text: "Standardized RNA/DNA extraction using high-grade protocols to ensure maximum quality for the assay.",
-                step3_title: "qPCR Analysis", step3_text: "The core engine. Multi-target qPCR machines detect specific genes/pathogens in hours. <br><em class='text-xs text-gray-500'>*NGS is used on-demand for deep sequencing.</em>",
-                step4_title: "Parallel Processing", step4_text: "Data from qPCR/LIMS triggers the workflow API. <br><span class='text-blue-400'>Stream A:</span> Secure Storage (GDPR).<br><span class='text-omniaTeal'>Stream B:</span> <strong>Mistral Large 3</strong> (Fine-tuned) analyzes the results instantly.",
-                step5_title: "Mistral Large 3 + Fine-Tuning", step5_text: "Our custom-trained <strong>Mistral Large 3</strong> model analyzes the data. It is fine-tuned on specific regional pathogen datasets.",
+                step1_title: "Sample Intake & LIMS", step1_text: "Barcodes are scanned. Metadata is instantly entered into the LIMS.",
+                step2_title: "High-Purity Extraction", step2_text: "Standardized RNA/DNA extraction using high-grade protocols.",
+                step3_title: "qPCR Analysis", step3_text: "The core engine. Multi-target qPCR machines detect specific genes/pathogens.",
+                step4_title: "Parallel Processing", step4_text: "Data sent to Storage (GDPR) and to AI Stream.",
+                step5_title: "Mistral Large 3 + Fine-Tuning", step5_text: "Our custom-trained model analyzes the results instantly.",
                 step6_title: "RAG Verification", step6_text: "Cross-check against PubMed, ClinVar, AIFA via RAG to prevent hallucinations.",
                 step7_title: "Client Access", step7_text: "Clients view results in LIMS. They can book appointments with our biologists directly via the platform (if needed).",
-                rag_desc: "Transparency is key. Click below to see the extensive list of open-data sources our AI consults via RAG.",
+                rag_desc: "Transparency is key. Click below to see the extensive list of open-data sources our AI consults.",
                 rag_btn: "View Verified Data Sources",
                 sectors_title: "One Health Sectors", sectors_sub: "Comprehensive diagnostics for every living system.",
-                sec_human: "Human Health", sec_human_desc: "Providing hospitals and individuals with molecular insights that save lives.",
-                sec_vet: "Veterinary & Livestock", sec_vet_desc: "Protecting agricultural heritage and companion animals.",
-                sec_food: "Agri-Food Safety", sec_food_desc: "Authenticating \"Made in Italy\" products and ensuring safety.",
-                sec_env: "Environment", sec_env_desc: "Monitoring the ecosystem to detect invisible threats.",
-                quality_title: "Quality & Accreditation", quality_sub: "Trust is our currency. OmniaGene is built to meet the strictest Regional and European standards.",
-                iso15189_text: "The gold standard for medical laboratories. It certifies our competence in medical testing.",
-                iso17025_text: "General requirements for the competence of testing and calibration laboratories.",
-                region_text: "Regional Accreditation for operating in the public health sector.",
-                aiact_text: "Full compliance with the new European regulation on AI for High-Risk Medical Devices.",
-                gdpr_text: "Strict Information security management. Total Data sovereignty with EU-based servers.",
-                iso9001_text: "Quality management systems ensuring consistent improvement.",
-                team_header: "Founders & Leadership", team_sub: "The synergy between deep biology and automation strategy.",
-                role_jacopo: "Co-Founder & CEO", tag_jacopo: "\"The Scientific Visionary.\"",
-                human_jacopo: "\"Native of Lecce, Jacopo grew up witnessing the healthcare gaps in his homeland. A humanitarian at heart, he returned with a mission: to use science as a tool for justice.\"",
-                bio_jacopo: "He transformed a clinical gap into a scalable scientific solution. He drives the scientific validation and clinical implementation of the lab.",
-                role_ronald: "Co-Founder & CSAO", tag_ronald: "\"The Architect & Tech Enthusiast.\"",
-                human_ronald: "\"A young Frenchman who discovered Apulia through Jacopo. A true pizza lover, he wants to see the region prosper. He brings the 'geek' vision and extreme versatility.\"",
-                bio_ronald: "The architect behind OmniaGene's business strategy and digital process automation. He turns complex workflows into efficient systems."
+                sec_human: "Human Health", sec_human_desc: "Providing hospitals with molecular insights that save lives.",
+                sec_vet: "Veterinary", sec_vet_desc: "Protecting agricultural heritage and companion animals.",
+                team_header: "Founders & Leadership",
+                role_jacopo: "Co-Founder & CEO", role_ronald: "Co-Founder & CSAO",
+                human_jacopo: "\"Native of Lecce, Jacopo grew up witnessing the healthcare gaps in his homeland. A humanitarian at heart, he returned with a mission.\"",
+                human_ronald: "\"A young Frenchman who discovered Apulia through Jacopo. A true pizza lover, he wants to see the region prosper. He brings the 'geek' vision.\""
             },
             fr: {
                 nav_mission: "Mission", nav_tech: "Technologie", nav_sectors: "Secteurs", nav_quality: "Qualité", nav_team: "Équipe",
@@ -516,41 +352,29 @@
                 hero_subtitle: "Diagnostics Deep-Tech propulsés par l'IA et la qPCR. La médecine de précision à Lecce en 72 heures.",
                 cta_mission: "Notre Mission", cta_tech: "Notre Technologie",
                 mission_title: "Combler le fossé", mission_sub: "Nous arrêtons la 'Migration des Échantillons' pour garantir la sécurité sanitaire locale.",
-                abstract_title: "Aperçu du Projet", abstract_text: "OmniaGene est plus qu'un laboratoire ; c'est un pacte avec le territoire. Situés au cœur du Salento, nous appliquons le principe One Health : reconnaissant que la santé des humains, des animaux et de l'environnement est inextricablement liée. Actuellement, les Pouilles souffrent d'un manque d'infrastructures de diagnostic, forçant les échantillons à voyager vers le Nord. Nous inversons cette tendance en collaborant directement avec les hôpitaux et vétérinaires locaux.",
-                reality_title: "La Réalité", impact_title: "Impact sur les Soins du Cancer", impact_text: "Des délais de 4 semaines à 6 mois réduisent les chances de rémission. La détection précoce est le facteur n°1.",
+                abstract_title: "Aperçu du Projet", abstract_text: "OmniaGene est plus qu'un laboratoire ; c'est un pacte avec le territoire. Situés au cœur du Salento, nous appliquons le principe One Health.",
+                reality_title: "La Réalité", impact_title: "Impact sur les Soins du Cancer", impact_text: "Des délais de 4 semaines à 6 mois réduisent les chances de rémission.",
                 promise_title: "La Promesse OmniaGene", speed_text: "De la collecte au rapport LIMS. La vitesse sauve des vies.",
-                logistics_title: "Logistique de bout en bout", logistics_text: "Nous récupérons les échantillons directement chez le client et téléchargeons les résultats de manière sécurisée.",
-                doctors_title: "Soutenir les Médecins", doctors_text: "Nos rapports annotés par l'IA font gagner des heures de recherche aux médecins, leur permettant de se concentrer à 100% sur le patient.",
+                logistics_title: "Logistique de bout en bout", logistics_text: "Nous récupérons les échantillons directement chez le client.",
+                doctors_title: "Soutenir les Médecins", doctors_text: "Des rapports annotés par l'IA font gagner des heures de recherche aux médecins.",
                 tech_title: "Workflow Avancé", tech_sub: "Science de Labo & Intelligence Automatisée 24/7.",
                 wet_lab_title: "Analyse Biologique", dry_lab_title: "Workflow Automatisé H24",
-                step1_title: "Réception & LIMS", step1_text: "Les échantillons arrivent. Codes-barres scannés. Métadonnées entrées instantanément dans le LIMS.",
-                step2_title: "Extraction Haute Pureté", step2_text: "Extraction ADN/ARN standardisée avec protocoles de haute qualité pour assurer la fiabilité.",
-                step3_title: "Analyse qPCR", step3_text: "Le moteur central. Machines qPCR multi-cibles pour détecter gènes et pathogènes en quelques heures. <br><em class='text-xs text-gray-500'>*Le NGS est utilisé sur demande.</em>",
-                step4_title: "Traitement Parallèle", step4_text: "Les données déclenchent l'API. <br><span class='text-blue-400'>Flux A:</span> Stockage Sécurisé (RGPD).<br><span class='text-omniaTeal'>Flux B:</span> <strong>Mistral Large 3</strong> analyse les résultats.",
-                step5_title: "Mistral Large 3 + Fine-Tuning", step5_text: "Notre modèle entraîné sur mesure analyse les données. Il est affiné sur des jeux de données pathogènes régionaux.",
+                step1_title: "Réception & LIMS", step1_text: "Les codes-barres sont scannés. Métadonnées entrées instantanément dans le LIMS.",
+                step2_title: "Extraction Haute Pureté", step2_text: "Extraction ADN/ARN standardisée avec protocoles de haute qualité.",
+                step3_title: "Analyse qPCR", step3_text: "Le moteur central. Machines qPCR multi-cibles pour détecter gènes et pathogènes.",
+                step4_title: "Traitement Parallèle", step4_text: "Données envoyées au Stockage (RGPD) et au flux IA.",
+                step5_title: "Mistral Large 3 + Fine-Tuning", step5_text: "Notre modèle entraîné sur mesure analyse les résultats instantanément.",
                 step6_title: "Vérification RAG", step6_text: "Vérification croisée avec PubMed, ClinVar, AIFA via RAG pour éviter les hallucinations.",
-                step7_title: "Accès Client", step7_text: "Les clients voient les résultats dans le LIMS. Ils peuvent prendre RDV avec nos biologistes directement (si nécessaire).",
-                rag_desc: "La transparence est clé. Cliquez ci-dessous pour voir la liste exhaustive des sources de données ouvertes consultées par notre IA.",
+                step7_title: "Accès Client", step7_text: "Les clients voient les résultats dans le LIMS. Ils peuvent prendre RDV avec nos biologistes (si nécessaire).",
+                rag_desc: "La transparence est clé. Cliquez ci-dessous pour voir les sources de données ouvertes consultées par notre IA.",
                 rag_btn: "Voir les Sources Vérifiées",
                 sectors_title: "Secteurs One Health", sectors_sub: "Diagnostics complets pour tout système vivant.",
                 sec_human: "Santé Humaine", sec_human_desc: "Fournir aux hôpitaux des informations moléculaires qui sauvent des vies.",
-                sec_vet: "Vétérinaire & Élevage", sec_vet_desc: "Protéger le patrimoine agricole et les animaux de compagnie.",
-                sec_food: "Sécurité Agroalimentaire", sec_food_desc: "Authentifier les produits 'Made in Italy' et assurer la sécurité.",
-                sec_env: "Environnement", sec_env_desc: "Surveiller l'écosystème pour détecter les menaces invisibles.",
-                quality_title: "Qualité & Accréditation", quality_sub: "La confiance est notre monnaie. OmniaGene respecte les normes régionales et européennes les plus strictes.",
-                iso15189_text: "L'étalon-or pour les laboratoires médicaux. Certifie notre compétence dans les tests médicaux.",
-                iso17025_text: "Exigences générales concernant la compétence des laboratoires d'étalonnages et d'essais.",
-                region_text: "Accréditation Régionale pour opérer dans le secteur de la santé publique.",
-                aiact_text: "Conformité totale avec la nouvelle réglementation européenne sur l'IA (Dispositifs Médicaux à Haut Risque).",
-                gdpr_text: "Gestion stricte de la sécurité de l'information. Souveraineté des données avec des serveurs basés dans l'UE.",
-                iso9001_text: "Systèmes de management de la qualité assurant une amélioration constante.",
-                team_header: "Fondateurs & Leadership", team_sub: "La synergie entre biologie profonde et stratégie d'automatisation.",
-                role_jacopo: "Co-Fondateur & PDG", tag_jacopo: "\"Le Visionnaire Scientifique.\"",
-                human_jacopo: "\"Natif de Lecce, Jacopo a grandi en voyant les lacunes sanitaires. Humanitaire dans l'âme, il est revenu avec une mission : utiliser la science comme outil de justice.\"",
-                bio_jacopo: "Il a transformé une lacune clinique en une solution scientifique évolutive. Il pilote la validation scientifique et l'implémentation clinique.",
-                role_ronald: "Co-Fondateur & CSAO", tag_ronald: "\"L'Architecte & Passionné Tech.\"",
-                human_ronald: "\"Un jeune Français qui a découvert les Pouilles grâce à Jacopo. Amoureux de la pizza, il veut voir la région prospérer. Il apporte la vision 'geek' et une polyvalence extrême.\"",
-                bio_ronald: "L'architecte derrière la stratégie commerciale et l'automatisation des processus. Il transforme des workflows complexes en systèmes efficaces."
+                sec_vet: "Vétérinaire", sec_vet_desc: "Protéger le patrimoine agricole et les animaux de compagnie.",
+                team_header: "Fondateurs & Leadership",
+                role_jacopo: "Co-Fondateur & PDG", role_ronald: "Co-Fondateur & CSAO",
+                human_jacopo: "\"Natif de Lecce, Jacopo a grandi en voyant les lacunes sanitaires. Humanitaire dans l'âme, il est revenu avec une mission.\"",
+                human_ronald: "\"Un jeune Français qui a découvert les Pouilles grâce à Jacopo. Amoureux de la pizza, il veut voir la région prospérer. Il apporte la vision 'geek'.\""
             },
             it: {
                 nav_mission: "Missione", nav_tech: "Tecnologia", nav_sectors: "Settori", nav_quality: "Qualità", nav_team: "Team",
@@ -558,41 +382,51 @@
                 hero_subtitle: "Diagnostica Deep-Tech potenziata da IA & qPCR. Portiamo la medicina di precisione a Lecce in 72 ore.",
                 cta_mission: "La Nostra Missione", cta_tech: "La Nostra Tecnologia",
                 mission_title: "Colmare il Divario", mission_sub: "Fermiamo la 'Migrazione dei Campioni' per garantire la sicurezza sanitaria locale.",
-                abstract_title: "Panoramica del Progetto", abstract_text: "OmniaGene è più di un laboratorio; è un patto con il territorio. Situati nel cuore del Salento, applichiamo il principio One Health. Attualmente, la Puglia soffre di una mancanza di infrastrutture diagnostiche, costringendo i campioni a viaggiare verso il Nord. Invertiamo questa tendenza collaborando direttamente con ospedali e veterinari locali.",
-                reality_title: "La Realtà", impact_title: "Impatto sulle Cure Oncologiche", impact_text: "Ritardi da 4 settimane a 6 mesi riducono le possibilità di remissione. La diagnosi precoce è il fattore n.1.",
+                abstract_title: "Panoramica del Progetto", abstract_text: "OmniaGene è più di un laboratorio; è un patto con il territorio. Situati nel cuore del Salento, applichiamo il principio One Health.",
+                reality_title: "La Realtà", impact_title: "Impatto sulle Cure Oncologiche", impact_text: "Ritardi da 4 settimane a 6 mesi riducono le possibilità di remissione.",
                 promise_title: "La Promessa OmniaGene", speed_text: "Dal ritiro al report LIMS. La velocità salva vite.",
-                logistics_title: "Logistica End-to-End", logistics_text: "Ritiriamo i campioni direttamente dal cliente e carichiamo i risultati in sicurezza.",
-                doctors_title: "Potenziare i Medici", doctors_text: "I nostri report annotati dall'IA risparmiano ore di ricerca ai medici, permettendo loro di concentrarsi al 100% sul paziente.",
+                logistics_title: "Logistica End-to-End", logistics_text: "Ritiriamo i campioni direttamente dal cliente.",
+                doctors_title: "Potenziare i Medici", doctors_text: "Report annotati dall'IA risparmiano ore di ricerca ai medici.",
                 tech_title: "Workflow Avanzato", tech_sub: "Scienza di Laboratorio & Intelligenza Automatizzata 24/7.",
                 wet_lab_title: "Analisi Biologica", dry_lab_title: "Workflow Automatizzato H24",
-                step1_title: "Accettazione & LIMS", step1_text: "Arrivo campioni. Codici a barre scansionati. Metadati inseriti istantaneamente nel LIMS.",
-                step2_title: "Estrazione ad Alta Purezza", step2_text: "Estrazione DNA/RNA standardizzata con protocolli di alta qualità per garantire affidabilità.",
-                step3_title: "Analisi qPCR", step3_text: "Il motore centrale. Macchine qPCR multi-target per rilevare geni e patogeni in poche ore. <br><em class='text-xs text-gray-500'>*NGS usato su richiesta.</em>",
-                step4_title: "Elaborazione Parallela", step4_text: "I dati attivano l'API. <br><span class='text-blue-400'>Flusso A:</span> Archiviazione Sicura (GDPR).<br><span class='text-omniaTeal'>Flusso B:</span> <strong>Mistral Large 3</strong> analizza i risultati.",
-                step5_title: "Mistral Large 3 + Fine-Tuning", step5_text: "Il nostro modello addestrato su misura analizza i dati. È affinato su dataset patogeni regionali.",
+                step1_title: "Accettazione & LIMS", step1_text: "Codici a barre scansionati. Metadati inseriti istantaneamente nel LIMS.",
+                step2_title: "Estrazione ad Alta Purezza", step2_text: "Estrazione DNA/RNA standardizzata con protocolli di alta qualità.",
+                step3_title: "Analisi qPCR", step3_text: "Il motore centrale. Macchine qPCR multi-target per rilevare geni e patogeni.",
+                step4_title: "Elaborazione Parallela", step4_text: "Dati inviati all'Archiviazione (GDPR) e al flusso IA.",
+                step5_title: "Mistral Large 3 + Fine-Tuning", step5_text: "Il nostro modello addestrato su misura analizza i risultati istantaneamente.",
                 step6_title: "Verifica RAG", step6_text: "Controllo incrociato con PubMed, ClinVar, AIFA via RAG per prevenire allucinazioni.",
-                step7_title: "Accesso Clienti", step7_text: "I clienti vedono i risultati nel LIMS. Possono prenotare appuntamenti con i biologi (se necessario).",
-                rag_desc: "La trasparenza è fondamentale. Clicca qui sotto per vedere la lista esaustiva delle fonti dati aperte consultate dalla nostra IA.",
+                step7_title: "Accesso Clienti", step7_text: "I clienti vedono i risultati nel LIMS. Possono prenotare appuntamenti con i nostri biologi (se necessario).",
+                rag_desc: "La trasparenza è fondamentale. Clicca qui sotto per vedere le fonti dati verificate consultate dalla nostra IA.",
                 rag_btn: "Vedi Fonti Dati Verificate",
                 sectors_title: "Settori One Health", sectors_sub: "Diagnostica completa per ogni sistema vivente.",
                 sec_human: "Salute Umana", sec_human_desc: "Fornire agli ospedali intuizioni molecolari che salvano vite.",
-                sec_vet: "Veterinaria & Allevamento", sec_vet_desc: "Proteggere il patrimonio agricolo e gli animali da compagnia.",
-                sec_food: "Sicurezza Agroalimentare", sec_food_desc: "Autenticare i prodotti 'Made in Italy' e garantire la sicurezza.",
-                sec_env: "Ambiente", sec_env_desc: "Monitorare l'ecosistema per rilevare minacce invisibili.",
-                quality_title: "Qualità & Accreditamento", quality_sub: "La fiducia è la nostra valuta. OmniaGene rispetta i più severi standard regionali ed europei.",
-                iso15189_text: "Il gold standard per i laboratori medici. Certifica la nostra competenza nei test medici.",
-                iso17025_text: "Requisiti generali per la competenza dei laboratori di prova e taratura.",
-                region_text: "Accreditamento Regionale per operare nel settore della sanità pubblica.",
-                aiact_text: "Piena conformità con il nuovo regolamento europeo sull'IA (Dispositivi Medici ad Alto Rischio).",
-                gdpr_text: "Gestione rigorosa della sicurezza delle informazioni. Sovranità dei dati con server UE.",
-                iso9001_text: "Sistemi di gestione della qualità per garantire un miglioramento costante.",
-                team_header: "Fondatori & Leadership", team_sub: "La sinergia tra biologia profonda e strategia di automazione.",
-                role_jacopo: "Co-Fondatore & CEO", tag_jacopo: "\"Il Visionario Scientifico.\"",
-                human_jacopo: "\"Nativo di Lecce, Jacopo è cresciuto vedendo le lacune sanitarie. Umanitario nel cuore, è tornato con una missione: usare la scienza come strumento di giustizia.\"",
-                bio_jacopo: "Ha trasformato una lacune clinica in una soluzione scientifica scalabile. Guida la validazione scientifica e l'implementazione clinica.",
-                role_ronald: "Co-Fondatore & CSAO", tag_ronald: "\"L'Architetto & Appassionato Tech.\"",
-                human_ronald: "\"Un giovane francese che ha scoperto la Puglia grazie a Jacopo. Amante della pizza, vuole vedere la regione prosperare. Porta la visione 'geek' e versatilità.\"",
-                bio_ronald: "L'architetto dietro la strategia aziendale e l'automazione dei processi. Trasforma workflow complessi in sistemi efficienti."
+                sec_vet: "Veterinaria", sec_vet_desc: "Proteggere il patrimonio agricolo e gli animali da compagnia.",
+                team_header: "Fondatori & Leadership",
+                role_jacopo: "Co-Fondatore & CEO", role_ronald: "Co-Fondatore & CSAO",
+                human_jacopo: "\"Nativo di Lecce, Jacopo è cresciuto vedendo le lacune sanitarie. Umanitario nel cuore, è tornato con una missione.\"",
+                human_ronald: "\"Un giovane francese che ha scoperto la Puglia grazie a Jacopo. Amante della pizza, vuole vedere la regione prosperare. Porta la visione 'geek'.\""
+            },
+             el: {
+                nav_mission: "Αποστολή", nav_tech: "Τεχνολογία", nav_sectors: "Τομείς", nav_quality: "Ποιότητα", nav_team: "Ομάδα",
+                hero_title_1: "Η Πρώτη Υποδομή Νοημοσύνης DNA", hero_title_2: "στη Νότια Ιταλία.",
+                hero_subtitle: "Διαγνωστικά Deep-Tech με τεχνητή νοημοσύνη & qPCR. Ιατρική ακριβείας στο Λέτσε σε 72 ώρες.",
+                cta_mission: "Η Αποστολή μας", cta_tech: "Η Τεχνολογία μας",
+                mission_title: "Γεφυρώνοντας το Χάσμα",
+                abstract_title: "Επισκόπηση Έργου",
+                tech_title: "Προηγμένη Ροή Εργασίας",
+                sectors_title: "Τομείς One Health",
+                team_header: "Ιδρυτές & Ηγεσία"
+            },
+            sq: {
+                nav_mission: "Misioni", nav_tech: "Teknologjia", nav_sectors: "Sektorët", nav_quality: "Cilësia", nav_team: "Ekipi",
+                hero_title_1: "Infrastruktura e Parë e Inteligjencës së ADN-së", hero_title_2: "në Italinë e Jugut.",
+                hero_subtitle: "Diagnostifikim Deep-Tech i fuqizuar nga AI & qPCR. Sjellja e mjekësisë së precizionit në Leçe brenda 72 orëve.",
+                cta_mission: "Misioni Ynë", cta_tech: "Teknologjia Jonë",
+                mission_title: "Mbushja e Hendekut",
+                abstract_title: "Përmbledhje e Projektit",
+                tech_title: "Rrjedha e Avancuar e Punës",
+                sectors_title: "Sektorët One Health",
+                team_header: "Themeluesit & Lidershipi"
             }
         };
 
@@ -606,6 +440,9 @@
                 const key = el.getAttribute('data-i18n');
                 if (translations[lang] && translations[lang][key]) {
                     el.innerHTML = translations[lang][key];
+                } else if (translations['en'][key]) {
+                    // Fallback to English if translation missing (for EL/SQ dense text)
+                    el.innerHTML = translations['en'][key];
                 }
             });
         }
